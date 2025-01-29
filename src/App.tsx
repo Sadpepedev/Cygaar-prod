@@ -66,7 +66,7 @@ function App() {
       .select('*')
       .neq('address', UNISWAP_POOL)
       .order('points', { ascending: false })
-      .limit(10);
+      .limit(25);
 
     if (error) {
       console.error('Error fetching leaderboard:', error);
@@ -170,10 +170,10 @@ function App() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8 md:mb-12 py-4">
             <h1 className="text-3xl md:text-5xl font-bold mb-3 md:mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-blue-400 animate-pulse leading-normal md:leading-normal">
-              Cygaar Points Tracker
+              Welcome to the Cygaarverse
             </h1>
             <p className="text-gray-300 text-base md:text-lg">
-              Track your points earned from holding Cygaar tokens
+              Cygaar is always watching..
             </p>
           </div>
 
